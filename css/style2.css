@@ -7,7 +7,6 @@ html,
 body {
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 
 body {
@@ -19,10 +18,17 @@ body {
   height: 100%;
   overflow: hidden;
   position: relative;
+  z-index: -1;
+}
+
+
+.iframe {
+  z-index: 1;
+  position: relative;
+  text-align: center;
 }
 
 .background {
-  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -6964,7 +6970,8 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #000;
+
 }
 
 li {
@@ -6987,14 +6994,12 @@ li a:hover {
 
 
 
-
-
 div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
-    width: 180px;
-    animation: message-frames 1.5s ease 7s forwards;
+    width: 400px;
+    animation: message-frames 1.5s ease 5s forwards;
     opacity: 0;
 }
 
@@ -7011,9 +7016,6 @@ div.desc {
     padding: 15px;
     text-align: center;
 }
-
-
-
 
 
 
